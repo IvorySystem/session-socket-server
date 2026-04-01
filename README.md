@@ -12,11 +12,12 @@ ivory-session-server/
 ├── LICENSE
 ├── Makefile
 ├── source/
+│   └── API/
+│   │   └── gen/
 │   ├── app/
 │   │   └── ivory/
 │   │       └── isss/
-│   └── API/
-│       └── gen/
+│   └── header/
 ├── systemd/
 │   ├── isss.service
 │   └── README.md

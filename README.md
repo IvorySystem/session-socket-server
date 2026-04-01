@@ -1,6 +1,6 @@
-# Ivory Socket Session Server
+# Ivory Session Socket Server
 
-`isss` is the session server used by the IvoryScript console and related tools. It provides interactive script execution with streamed output for a persistent session-style environment.  The server is intended to act as a proxy between client sockets and multiple worker processes running `iss`.  It is currently used by the online IvoryScript console to execute submitted scripts and stream output progressively back to the browser.
+`isss` is the session socket server used by the IvoryScript console and related tools. It provides interactive script execution with streamed output for a persistent session-style environment.  The server is intended to act as a proxy between client sockets and multiple worker processes running `iss`.  It is currently used by the online IvoryScript console to execute submitted scripts and stream output progressively back to the browser.
 
 ## Repository Layout
 

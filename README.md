@@ -17,7 +17,6 @@ ivory-session-server/
 │   │       └── isss/
 │   └── API/
 │       └── gen/
-├── scripts/
 ├── systemd/
 │   ├── isss.service
 │   └── README.md

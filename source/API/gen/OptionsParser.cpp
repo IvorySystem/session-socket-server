@@ -125,7 +125,6 @@ void OptionsParser::nextToken(void) {
                         *cp++ = _c;
                         n++;
                      }
-                     *cp++ = _c;
                   } while (true);
                   *cp = '\0';
                }

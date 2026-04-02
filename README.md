@@ -1,6 +1,6 @@
 # Ivory Session Socket Server
 
-`isss` is the session socket server used by the IvoryScript console and related tools. It provides interactive script execution with streamed output for a persistent session-style environment.  The server is intended to act as a proxy between client sockets and multiple worker processes running `iss`.  It is currently used by the online IvoryScript console to execute submitted scripts and stream output progressively back to the browser.
+`isss` is the session socket server used by the Ivory System/Script online console and related tools. It is intended to act as a proxy between client sockets and multiple worker session processes running `iss`, and is currently used by the console to execute submitted IvoryScript input and stream output progressively back to the browser for a persistent session-style environment.
 
 ## Repository layout
 
@@ -70,23 +70,23 @@ The included `Makefile` handles dependency tracking and architecture-specific fl
 
 | Option | Default | Description |
 | :--- | :--- | :--- |
-| `port` | `4196` | The TCP port the server listens on. |
+| `port` | `4196` | The TCP/IP port the server listens on. |
 | `exec` | `/usr/local/bin/iss` | Absolute path to the IvoryScript (`iss`) binary. |
 | `maxClients` | `16` | Maximum number of concurrent network connections. |
 | `maxWorkers` | `16` | Maximum number of simultaneous worker sessions. |
-| `workerTimeout` | `900` | Inactivity timeout in seconds (default: 15 mins). |
+| `workerTimeout` | `900` | Worker inactivity timeout in seconds (default: 15 mins). |
 
 ### Examples
 
 **Standard Start (using defaults):**
 ```bash
 isss
-
+```
 ---
 
 ## Status
 
-This repository contains the standalone session server component currently used to support the online IvoryScript console.
+This repository contains the standalone session server component currently used to support the online Ivory System/Script console.
 
 ## Related
 
